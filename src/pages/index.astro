@@ -111,14 +111,14 @@ const categorySlug = (category: string) =>
 
 <style>
 	main {
-		max-width: 900px;
+		width: min(1100px, calc(100% - 64px));
 		margin: 0 auto;
-		padding: 100px 32px;
+		padding: 90px 0;
 	}
 
 	.hero {
-		max-width: 720px;
-		margin-bottom: 120px;
+		max-width: 900px;
+		margin-bottom: 110px;
 	}
 
 	.eyebrow {
@@ -130,9 +130,9 @@ const categorySlug = (category: string) =>
 
 	.hero h1 {
 		margin: 0;
-		font-size: clamp(3rem, 7vw, 5.2rem);
-		line-height: 1.02;
-		letter-spacing: -0.05em;
+		font-size: clamp(2.5rem, 5vw, 4rem);
+		line-height: 1.08;
+		letter-spacing: -0.04em;
 	}
 
 	.intro {
