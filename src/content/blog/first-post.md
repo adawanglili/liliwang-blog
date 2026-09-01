@@ -1,16 +1,65 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
+title: 'What I Finally Understand About AI'
+description: 'A few simple ideas that helped me understand how large language models actually work.'
+pubDate: 'Aug 28 2026'
 heroImage: '../../assets/blog-placeholder-3.jpg'
+category: 'AI & Technology'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+I've spent quite a bit of time around AI, but for a long time I realized that I could talk about AI without really understanding what was happening underneath.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+So I decided to go back to the basics.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+The simplest way I now think about a large language model is this:
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+> It learns patterns from an enormous amount of text and uses those patterns to predict what comes next.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+That's it.
+
+Of course, what happens underneath is incredibly complicated. But this simple idea helped me connect many of the concepts that had previously felt disconnected.
+
+## Tokens
+
+Before a language model can work with text, it breaks text into smaller pieces called tokens.
+
+A token might be a word, part of a word, punctuation, or something else.
+
+The model doesn't actually "read" a sentence the way we do.
+
+It works with numbers representing these tokens.
+
+## The model learns patterns
+
+During training, the model sees enormous amounts of text.
+
+It repeatedly tries to predict what comes next.
+
+For example:
+
+> The sky is...
+
+A model might learn that words such as "blue", "clear", or "dark" are plausible continuations depending on the context.
+
+After doing this billions or trillions of times, the model becomes extremely good at recognizing patterns in language.
+
+## Why does it look intelligent?
+
+This is the part I find most interesting.
+
+The model isn't simply storing sentences and looking them up.
+
+It learns relationships between concepts, words, structures, and contexts.
+
+As the model becomes larger and is trained on more data, surprisingly sophisticated behaviors can emerge.
+
+That's why something that started as "predict the next token" can eventually write code, summarize documents, translate languages, reason through problems, and hold a conversation.
+
+## I'm still learning
+
+I don't think understanding AI means memorizing every technical detail.
+
+For me, the more useful goal is to build a mental model that is simple enough to use and accurate enough to be useful.
+
+This blog is partly an attempt to do exactly that:
+
+to take complicated ideas, understand them, and explain them in plain language.
