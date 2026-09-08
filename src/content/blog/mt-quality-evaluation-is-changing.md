@@ -1,6 +1,6 @@
 ---
 title: 'What I''m Learning About MT Quality Evaluation: From Scores to Decisions'
-description: 'Machine translation quality evaluation is moving beyond scores toward publishability, risk-based decisions, LLM evaluation, structured error diagnosis, and closed-loop quality workflows.'
+description: 'How machine translation quality evaluation is evolving from traditional metrics toward LLM judges, MQM-style error diagnosis, publishability decisions, automated repair, and human-in-the-loop workflows.'
 pubDate: 'Sep 8 2026'
 heroImage: '../../assets/MT.png'
 category: 'AI & Technology'
