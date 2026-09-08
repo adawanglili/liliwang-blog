@@ -7,6 +7,8 @@ category: "Travel & Outdoors"
 
 [![Watch the hiking video on YouTube](../../assets/montagne-argent-video-thumb.jpg)](https://www.youtube.com/shorts/An9oJlOpFfs)
 
+Here's a short video I made of the trip, click to check it out on YouTube.
+
 I didn't expect to find ropes on a hiking trail this close to Montréal! But that's exactly what happened at Montagne d'Argent, in La Conception, Québec:
 
 The hike was about 5.3 km with roughly 364 metres of elevation gain. It wasn't a long hike, but it definitely wasn't just a casual walk in the woods either 👀
