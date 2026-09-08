@@ -5,7 +5,7 @@ pubDate: "Aug 27 2026"
 category: "Travel & Outdoors"
 ---
 
-[Here's a short video I made for YouTube](https://www.youtube.com/shorts/An9oJlOpFfs)
+[![Watch the hiking video on YouTube](../../assets/montagne-argent-video-thumb.jpg)](https://www.youtube.com/shorts/An9oJlOpFfs)
 
 I didn't expect to find ropes on a hiking trail this close to Montréal! But that's exactly what happened at Montagne d'Argent, in La Conception, Québec:
 
@@ -23,7 +23,7 @@ The hike was about 5.3 km with roughly 364 metres of elevation gain. It wasn't a
 }
 </style>
 
-There were rocks and forest✨, little mushrooms along the trail🍄, wild blueberries 🫐, and eventually a small lake 💧(Lac d’Argent/Lake Argent) as a reward✨. It felt less like following a perfectly manicured trail and more like exploring a piece of the Laurentians.
+There were rocks and forest🌲, little mushrooms along the trail🍄, wild blueberries 🫐, and eventually a small lake 💧(Lac d’Argent/Lake Argent) as a reward✨. It felt less like following a perfectly manicured trail and more like exploring a piece of the Laurentians.
 
 That's probably what made the hike memorable for me.
 
