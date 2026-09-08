@@ -1,17 +1,42 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '../../assets/blog-placeholder-2.jpg'
-category: 'Travel & Outdoors'
+title: "Montagne d'Argent: I Didn't Expect Ropes on This Hike Near Montréal"
+description: "A summer hike at Montagne d'Argent, Québec, with rocky climbs, ropes, wild blueberries, mushrooms, and a little lake at the end."
+pubDate: "Aug 27 2026"
+category: "Travel & Outdoors"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+I didn't expect to find ropes on a hiking trail this close to Montréal.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+But that's exactly what happened at Montagne d'Argent, in La Conception, Québec.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+The hike was about 5.3 km with roughly 364 metres of elevation gain. It wasn't a long hike, but it definitely wasn't just a casual walk in the woods either.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+There were rocky sections, steep climbs, and places where ropes helped with the ascent or descent. The trail felt much more adventurous than I expected.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+[Watch the short video on YouTube](https://www.youtube.com/shorts/An9oJlOpFfs)
+
+## More than just a hike
+
+One of the things I liked about this hike was how quickly the scenery changed.
+
+There were rocks and forest, little mushrooms along the trail, wild blueberries, and eventually a small lake. It felt less like following a perfectly manicured trail and more like exploring a piece of the Laurentians.
+
+That's probably what made the hike memorable for me.
+
+Montagne d'Argent has around 15 km of hiking trails, with routes ranging from easier to more challenging terrain. The park itself describes some sections as including stairs, ladders, and handlines, and recommends appropriate equipment and experience for the more difficult trails. [The park's official site](https://www.montagnedargent.com/) also notes that the site is about 125 km from Montréal.
+
+## Would I do it again?
+
+Yes.
+
+But I would probably pay a little more attention to the difficulty before bringing someone who isn't comfortable with rocky or steep terrain.
+
+The ropes were part of the fun—but they also made it clear that this isn't the kind of hike where you can completely switch off and wander around in sneakers.
+
+For me, that's exactly what made it interesting.
+
+A relatively short hike, a little climbing, some wild blueberries, a lake at the end, and just enough adventure to make the day feel different.
+
+Would you hike it?
+
+[Watch the video →](https://www.youtube.com/shorts/An9oJlOpFfs)
