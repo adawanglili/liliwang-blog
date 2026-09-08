@@ -8,7 +8,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://blog.adawanglili.workers.dev',
 	output: 'static',
-	adapter: cloudflare(),
+	adapter: cloudflare({ imageService: 'compile' }),
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
