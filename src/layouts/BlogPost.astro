@@ -34,7 +34,7 @@ const readingTime = Math.max(
 			}
 
 			.article-header {
-				max-width: 820px;
+				max-width: 900px;
 				margin: 0 auto;
 				padding: 80px 24px 50px;
 			}
@@ -51,16 +51,16 @@ const readingTime = Math.max(
 
 			.title {
 				margin: 0;
-				font-size: clamp(2.4rem, 6vw, 4.5rem);
-				line-height: 1.05;
-				letter-spacing: -0.04em;
+				font-size: clamp(2rem, 4vw, 3.2rem);
+				line-height: 1.12;
+				letter-spacing: -0.035em;
 			}
 
 			.description {
-				max-width: 680px;
+				max-width: none;
 				margin: 24px 0 0;
-				font-size: 1.2rem;
-				line-height: 1.6;
+				font-size: 1.1rem;
+				line-height: 1.65;
 				color: rgb(var(--gray));
 			}
 
@@ -78,7 +78,7 @@ const readingTime = Math.max(
 			}
 
 			.hero-image {
-				max-width: 1100px;
+				max-width: 900px;
 				margin: 0 auto 50px;
 				padding: 0 24px;
 			}
@@ -91,13 +91,13 @@ const readingTime = Math.max(
 			}
 
 			.prose {
-				width: 720px;
-				max-width: calc(100% - 48px);
-				margin: 0 auto;
-				padding-bottom: 80px;
-				color: rgb(var(--gray-dark));
-				font-size: 1.08rem;
-				line-height: 1.85;
+    			width: 900px;
+    			max-width: calc(100% - 48px);
+    			margin: 0 auto;
+    			padding-bottom: 80px;
+    			color: rgb(var(--gray-dark));
+    			font-size: 1.08rem;
+    			line-height: 1.8;
 			}
 
 			.prose :global(h2) {
@@ -131,6 +131,10 @@ const readingTime = Math.max(
 				font-size: 1.15rem;
 				font-style: italic;
 				color: rgb(var(--gray));
+			}
+
+			.prose :global(blockquote p) {
+    			margin: 0;
 			}
 
 			.prose :global(ul),
@@ -246,8 +250,8 @@ const readingTime = Math.max(
 					heroImage && (
 						<div class="hero-image">
 							<Image
-								width={1100}
-								height={550}
+								width={900}
+								height={450}
 								src={heroImage}
 								alt=""
 							/>
