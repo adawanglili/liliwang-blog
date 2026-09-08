@@ -21,12 +21,15 @@ import { SITE_TITLE } from '../consts';
 			<section class="intro">
 				<p class="eyebrow">ABOUT</p>
 
-				<h1>Hi, I'm Lili.</h1>
+				<p class="lead">
+					<span class="name">Ada Wang Lili</span> is a Program and Product Management
+					professional with 20+ years of experience across localization,
+					technical program management, AI, content platforms, and globalization.
+				</p>
 
 				<p class="lead">
-					I'm a program and product professional interested in
-					AI, technology, globalization, and the ways technology
-					shapes how we work and live.
+					She writes about AI, machine translation, localization technology,
+					product management, and emerging technology.
 				</p>
 			</section>
 
@@ -101,11 +104,12 @@ import { SITE_TITLE } from '../consts';
 		letter-spacing: 0.14em;
 	}
 
-	h1 {
-		margin: 0;
-		font-size: clamp(3rem, 7vw, 5rem);
-		line-height: 1;
-		letter-spacing: -0.05em;
+	.name {
+		font-size: 2.6rem;
+		font-weight: 700;
+		line-height: 1.1;
+		letter-spacing: -0.03em;
+		color: rgb(var(--black));
 	}
 
 	.lead {
