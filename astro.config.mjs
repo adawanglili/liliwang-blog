@@ -6,7 +6,7 @@ import cloudflare from '@astrojs/cloudflare';
 import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
-	site: 'https://blog.adawanglili.workers.dev',
+	site: 'https://adawanglili.com',
 	output: 'static',
 	adapter: cloudflare({ imageService: 'compile' }),
 	integrations: [mdx(), sitemap()],
