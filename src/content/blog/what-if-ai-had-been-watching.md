@@ -1,23 +1,31 @@
 ---
 title: 'What if AI Had Been Watching?'
-description: 'A reflection on a fatal accident at Montreal-Trudeau Airport, and why real-time computer vision for physical safety might be one of AI’s most meaningful applications.'
+description: 'A look at whether AI powered computer vision could help prevent airport ground accidents, from a real safety check improvement at Toronto Pearson to what went wrong with LaGuardia''s ASDE-X system in the March 2026 collision.'
 pubDate: 'Aug 29 2026'
 heroImage: '../../assets/what-if-ai-had-been-watching.png'
 category: 'AI & Technology'
 ---
 
-A few days ago, a worker at Montreal-Trudeau Airport passed away following an accident during aircraft ground operations. This is so sad.
+A few days ago, a ground handling worker at Montreal-Trudeau Airport died after an accident involving an aircraft during ground operations. It is really sad news.
 
-It immediately made me think about one of the AI applications I find most meaningful, not another chatbot, not content generation, but AI that helps keep people safe.
+The investigation is still ongoing, and we do not yet know exactly what caused the accident. But it made me think about a different question: when cameras are already watching, could AI help us see danger before humans do?
 
-Airports already have cameras. Today, computer vision can go much further than simply recording what happened. AI can potentially detect people, vehicles, and aircraft in real time, understand their positions and movements, and flag dangerous situations such as a worker entering an aircraft's exclusion zone while the aircraft is moving.
+Airports are incredibly complex environments. Airplanes, ground vehicles and hundreds of workers are constantly moving around each other. A communication failure, a blind spot, or someone entering the wrong area can have devastating consequences.
 
-> For example, an AI "second pair of eyes" continuously watching the apron: person + moving aircraft + unsafe distance → immediate warning.
+And this is not purely theoretical anymore. Airports are already using AI powered computer vision to analyze what is happening around aircraft in real time. These systems can detect aircraft, vehicles and people, monitor ground operations, identify unsafe behaviours and alert operations teams when something does not look right.
 
-And this technology already exists in parts of the aviation industry. I guess the question is how far we can take it, and how responsibly we integrate it into safety systems.
+> Imagine a system that understands that an aircraft is moving, a worker is inside a restricted zone, a vehicle is approaching, and their trajectories are converging. Instead of simply recording the event, it could recognize the potential danger and issue a warning in real time, before something happens.
 
-Of course, AI cannot replace proper equipment, procedures, training, or human judgment. And we should not assume AI could have prevented this particular tragedy before the investigation tells us what happened, since it's still ongoing.
+There are already some interesting examples. Toronto Pearson deployed AI powered computer vision across its 106 gates to monitor aircraft turnaround operations. In a separate Assaia case study, at a different, unnamed airport, one specific safety check, confirming a stand was clear of ground equipment and debris after departure, was missed on 60% of flights before deployment. After the system was introduced, that figure fell to 24%. This is one specific safety behaviour at one airport, rather than evidence that AI has reduced airport accidents overall, but it is still an interesting result.
 
-> If AI can perceive the physical world in real time, shouldn't some of its most valuable applications be about preventing harm before it happens?
+At the same time, the March 2026 collision at New York's LaGuardia Airport shows the limitations of existing technology. The airport's ASDE-X ground surveillance system did not issue an alert before an Air Canada Express aircraft collided with a fire truck. Investigators found that the fire truck was not equipped with a transponder, which ASDE-X needs to track a vehicle reliably, so the system could not confidently identify the conflict.
 
-To me, that is one of the most compelling promises of AI: not just making us more productive, but helping us build a safer physical world.
+That raises an interesting question about where AI could add another layer of protection. Traditional safety systems are very good at applying predefined rules to reliable data. AI and computer vision could potentially help when the physical environment is more ambiguous, especially when information comes from cameras and multiple sources.
+
+Of course, AI is not a replacement for proper equipment, procedures, training or human judgment. And we should not assume AI could have prevented the Montreal accident. We simply do not know that yet.
+
+But perhaps this is where some of the most meaningful applications of AI will emerge. Not AI that writes another email or generates another image, but AI that can see what is happening, understand when something looks dangerous and warn people when they may not have enough time to notice it themselves.
+
+> Because the best outcome of an AI safety system is not a better prediction.
+>
+> It is an accident that never happens.
