@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import avatar from '../assets/ada-avatar.jpg';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
@@ -19,6 +21,8 @@ import { SITE_TITLE } from '../consts';
 
 		<main>
 			<section class="intro">
+				<Image src={avatar} alt="Ada Wang Lili" width={140} height={140} class="portrait" />
+
 				<p class="eyebrow">ABOUT</p>
 
 				<p class="lead">
@@ -97,6 +101,16 @@ import { SITE_TITLE } from '../consts';
 		margin-bottom: 110px;
 	}
 
+	.intro :global(.portrait) {
+		display: block;
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin-bottom: 28px;
+		box-shadow: var(--box-shadow);
+	}
+
 	.eyebrow {
 		margin-bottom: 24px;
 		font-size: 0.78rem;
@@ -127,7 +141,7 @@ import { SITE_TITLE } from '../consts';
 	h2 {
 		margin-bottom: 35px;
 		font-size: 1.4rem;
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid var(--border);
 		padding-bottom: 14px;
 	}
 
