@@ -2,7 +2,7 @@
 title: 'Localization Already Had Retrieval. The Harder Problem Was Always What to Do With It.'
 description: 'What RAG and LLMs add to mature TMS retrieval.'
 pubDate: 'Sep 14 2026'
-heroImage: '../../assets/01-retrieval-interpretation-orchestration.png'
+heroImage: '../../assets/localization-ai-pipeline-hero.png'
 category: 'AI & Technology'
 series: 'Rethinking Localization in the Age of AI'
 seriesPart: 1
