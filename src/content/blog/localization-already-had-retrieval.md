@@ -55,26 +55,7 @@ reuse / adapt / generate
 evaluate
 ```
 
-Retrieval is evidence. It is not automatically the answer.
-
-## MT already understands context
-
-It is tempting to frame this as a weakness in machine translation's ability to understand context. That would be too simplistic.
-
-Modern neural MT models sentence-level context well, and can use more of it when a system explicitly supplies it. The broader localization problem is that the relevant signal often extends beyond the source sentence, in many different forms:
-
-- previous translations
-- terminology
-- metadata
-- product conventions
-- style guidance
-- screenshots
-- UX designs
-- product documentation
-- engineering information
-- and other organizational systems
-
-The difficult cases, therefore, are not necessarily ones where the machine "doesn't understand the sentence." They are cases where the system needs to determine **which contextual signals matter, how those signals should be represented, and how they should influence the output.**
+Retrieval is evidence. It is not automatically the answer. And that distinction becomes important because not every contextual decision needs the same kind of intelligence.
 
 ## Not every localization problem needs AI
 
