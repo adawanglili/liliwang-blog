@@ -4,6 +4,7 @@ description: 'Three recent tech deals, Autodesk acquiring MaintainX, NVIDIA acqu
 pubDate: 'Sep 9 2026'
 heroImage: '../../assets/reinforcing-loops-ai-race.png'
 category: 'AI & Technology'
+tags: ['AI', 'Technology', 'Product Strategy']
 ---
 
 I've been thinking about three recent tech stories that, at first, seemed completely unrelated.

@@ -16,6 +16,35 @@ const categorySlug = (category: string) =>
 		.toLowerCase()
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/(^-|-$)/g, '');
+
+const tagSlug = (tag: string) =>
+	tag
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/(^-|-$)/g, '');
+
+const tagCounts = new Map<string, number>();
+posts.forEach((post) => {
+	(post.data.tags ?? []).forEach((tag) => {
+		tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+	});
+});
+
+const tagList = [...tagCounts.entries()]
+	.map(([tag, count]) => ({ tag, count }))
+	.sort((a, b) => a.tag.localeCompare(b.tag));
+
+const tagCountValues = tagList.map((t) => t.count);
+const minCount = Math.min(...tagCountValues);
+const maxCount = Math.max(...tagCountValues);
+
+const MIN_SIZE = 0.95;
+const MAX_SIZE = 2.5;
+
+const tagFontSize = (count: number) =>
+	maxCount === minCount
+		? (MIN_SIZE + MAX_SIZE) / 2
+		: MIN_SIZE + ((count - minCount) / (maxCount - minCount)) * (MAX_SIZE - MIN_SIZE);
 ---
 
 <!doctype html>
@@ -33,10 +62,24 @@ const categorySlug = (category: string) =>
 					Notes on technology, work, and life.
 				</h1>
 
-				<p class="intro">
-					I write about AI, technology, career, China,
-					travel, and the things I'm curious about.
-				</p>
+				<p class="intro">I write about things I'm curious about:</p>
+
+				{
+					tagList.length > 0 && (
+						<div class="tag-cloud">
+							{tagList.map(({ tag, count }, i) => (
+								<a
+									href={`/tag/${tagSlug(tag)}/`}
+									class="tag-cloud-word"
+									style={`font-size: ${tagFontSize(count).toFixed(2)}rem; color: var(--tag-${(i % 8) + 1});`}
+									title={`${count} ${count === 1 ? 'post' : 'posts'}`}
+								>
+									{tag}
+								</a>
+							))}
+						</div>
+					)
+				}
 			</section>
 
 			<section class="section">
@@ -136,6 +179,28 @@ const categorySlug = (category: string) =>
 		font-size: 1.25rem;
 		line-height: 1.7;
 		color: rgb(var(--gray));
+	}
+
+	.tag-cloud {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 6px 22px;
+		margin-top: 26px;
+	}
+
+	.tag-cloud-word {
+		text-decoration: none;
+		font-weight: 700;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		transition: opacity 0.15s ease;
+	}
+
+	.tag-cloud-word:hover {
+		opacity: 0.6;
+		text-decoration: underline;
+		text-underline-offset: 3px;
 	}
 
 	.section {

@@ -4,6 +4,7 @@ description: 'A look at whether AI powered computer vision could help prevent ai
 pubDate: 'Aug 29 2026'
 heroImage: '../../assets/what-if-ai-had-been-watching.png'
 category: 'AI & Technology'
+tags: ['AI', 'Technology', 'Aviation Safety', 'Computer Vision']
 ---
 
 A few days ago, a ground handling worker at Montreal-Trudeau Airport died after an accident involving an aircraft during ground operations. It is really sad news.

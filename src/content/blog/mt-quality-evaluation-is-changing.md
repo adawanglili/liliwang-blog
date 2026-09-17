@@ -4,6 +4,7 @@ description: 'How machine translation quality evaluation is evolving from tradit
 pubDate: 'Sep 8 2026'
 heroImage: '../../assets/MT.png'
 category: 'AI & Technology'
+tags: ['Machine Translation', 'Localization', 'AI', 'Quality Evaluation', 'LLM']
 ---
 
 I've been spending more time looking at how machine translation (MT) quality is being evaluated as AI translation gets cheaper, faster, and fluent. One thing that keeps coming up is a shift in the question we are trying to answer.

@@ -4,6 +4,7 @@ description: 'A little corner of the internet for the things I am curious about,
 pubDate: 'Aug 7 2026'
 heroImage: '../../assets/starting-this-blog.jpg'
 category: 'AI & Technology'
+tags: ['Blogging', 'Astro', 'Claude', 'Writing']
 ---
 
 I've tried having a personal website before. There was MSN Spaces, then MySpace, and later WordPress, and none of them lasted very long. Life got busy, and I stopped writing, but I never quite lost the idea of having a little corner of the internet that was my own.
