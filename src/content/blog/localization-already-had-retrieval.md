@@ -1,6 +1,6 @@
 ---
-title: 'Localization Already Had Retrieval. The Harder Problem Was Always What to Do With It.'
-description: 'What TM, MT, style rules, RAG, and LLMs are actually changing in localization.'
+title: 'Localization Already Had Retrieval. So What Does AI Add?'
+description: 'Where RAG and LLMs add value to the localization systems we already have.'
 pubDate: 'Sep 14 2026'
 heroImage: '../../assets/localization-ai-pipeline-hero.png'
 category: 'AI & Technology'
@@ -12,7 +12,7 @@ tags: ['Localization', 'AI', 'TMS', 'RAG']
 
 After more than a decade working with localization platforms, I wanted to try something from a different angle: building a RAG-based architecture using localization as the domain.
 
-The exercise raised a more useful question than whether an LLM can produce a good translation: **if mature TMSs already retrieve linguistic knowledge, where does AI actually add value?**
+As I worked through the experiment, it prompted me to step back and look more closely at how localization platforms are evolving around AI. The more I looked, the more interesting the question became: **if mature TMSs already retrieve linguistic knowledge, where does AI actually add value?**
 
 That question became the starting point for this series.
 
