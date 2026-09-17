@@ -6,6 +6,7 @@ heroImage: '../../assets/localization-ai-pipeline-hero.png'
 category: 'AI & Technology'
 series: 'Rethinking Localization in the Age of AI'
 seriesPart: 1
+seriesTotal: 5
 tags: ['Localization', 'AI', 'TMS', 'RAG']
 ---
 
@@ -19,7 +20,7 @@ That question became the starting point for this series.
 
 A modern TMS rarely starts translation from a blank page. Translation Memory provides exact and fuzzy matches. Termbases provide approved terminology and business rules. Primary TM, background TMs, metadata, content types, matching thresholds, priorities and penalties can all influence what gets surfaced. That is already sophisticated retrieval.
 
-RAG is a term that surfaced in my world in 2024. Now thinking about it, localization has long practiced workflows that are *similar in spirit* to retrieval-augmented generation, even though a traditional TMS and modern RAG are not the same architecture. Traditional TMS retrieval is highly structured and often deterministic; RAG commonly retrieves heterogeneous evidence for a generative model. Retrieval itself is not new.
+RAG is a term that surfaced in my world in 2024. Localization has long practiced workflows that are *similar in spirit* to retrieval-augmented generation, even though a traditional TMS and modern RAG are not the same architecture. Traditional TMS retrieval is highly structured and often deterministic; RAG commonly retrieves heterogeneous evidence for a generative model. Retrieval itself is not new.
 
 ## The story starts after retrieval
 
@@ -39,7 +40,7 @@ A conventional NMT engine receives the source text and whatever contextual signa
 
 If the TMS instead provides a textual explanation such as "This button applies the selected filters," and that explanation is actually passed to the NMT engine as context, then NMT can use that information. The issue is therefore not that NMT cannot use context. The issue is **what context is supplied to the engine, in what form, and how the engine can consume it.**
 
-A multimodal LLM could go a step further by receiving the source string together with the screenshot and reasoning over both. But that is a capability of the model and its integration—not simply a consequence of the screenshot existing somewhere in the localization workflow.
+A multimodal LLM could go a step further by receiving the source string together with the screenshot and reasoning over both. But that is a capability of the model and its integration, not simply a consequence of the screenshot existing somewhere in the localization workflow.
 
 So the architecture is better described as:
 
@@ -53,7 +54,7 @@ reuse / adapt / generate
 evaluate
 ```
 
-Retrieval is evidence. It is not automatically the answer. And that distinction becomes important because not every contextual decision needs the same kind of intelligence.
+Retrieval is evidence. It is not automatically the answer.
 
 ## Not every localization problem needs AI
 
@@ -154,45 +155,7 @@ The question isn't whether the translation is good.
 
 The question is whether the **reason it was good in the previous context also applies here**.
 
-That is a much more subtle problem.
-
-## Match confidence and business risk are different
-
-This suggests another useful distinction.
-
-**Match confidence:**
-How much can we trust the context we retrieved?
-
-**Business risk:**
-How much does it matter if we get the translation wrong?
-
-These are related, but they are not the same dimension.
-
-| | Low risk | High risk |
-|---|---|---|
-| **High confidence** | Reuse + basic QA | Reuse + strict QA |
-| **Low confidence** | MT/LLM + AI QA | MT/LLM + deeper QA + human review |
-
-The exact routing will vary by organization and content type.
-
-**Human review can be risk-based rather than automatically applied to every string.**
-
-A low-risk UI label with a strong contextual match may need very little intervention.
-
-A high-impact communication with weak evidence may deserve much more.
-
-This changes what AI evaluation should ask. Instead of only:
-
-> "Is this translation good?"
-
-it may need to ask:
-
-- Was the right context retrieved?
-- Is it applicable here?
-- Did the translation follow the relevant terminology and rules?
-- Does the output introduce a business-critical error?
-
-That is a more useful quality model than treating every translation as the same kind of problem.
+That is the harder problem: not finding a translation, but understanding when the retrieved translation should influence the next decision. It changes what we should ask of a localization system: not whether a match is strong, but whether the retrieved context is actually relevant, and whether the system can use it appropriately.
 
 ## The bigger question
 
@@ -202,7 +165,7 @@ That knowledge can include TM, terminology and rules.
 
 But the "Apply" example exposes a larger possibility.
 
-The screenshot may be in the localization platform, the design spec in Figma, the implementation in GitHub, the feature requirement in Jira — and the product behavior itself may be documented somewhere else entirely.
+The screenshot may be in the localization platform, the design spec in Figma, the implementation in GitHub, the feature requirement in Jira. The product behavior itself may be documented somewhere else entirely.
 
 The localization system may know that the string exists, while another system contains the information needed to understand what the string actually does.
 
@@ -210,7 +173,7 @@ That leads to the next question:
 
 **What if the context needed to localize something does not live in the TMS at all?**
 
-Next in the series: *The Context Localization Needs Doesn't Always Live in the TMS.*
+**Next in the series:** *The Context Localization Needs Doesn't Always Live in the TMS.*
 
 ### Industry examples
 

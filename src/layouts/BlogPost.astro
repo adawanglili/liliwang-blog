@@ -17,6 +17,7 @@ const {
 	category,
 	series,
 	seriesPart,
+	seriesTotal,
 	readingTime,
 } = Astro.props;
 ---
@@ -161,8 +162,37 @@ const {
 
 			.prose :global(pre) {
 				overflow-x: auto;
-				padding: 1.2em;
+				padding: 1.3em 1.5em;
 				border-radius: 8px;
+				border: 1px solid var(--border);
+				background: rgba(var(--gray-light), 0.6) !important;
+				color: rgb(var(--gray-dark)) !important;
+				font-size: 0.92em;
+				line-height: 1.65;
+			}
+
+			.prose :global(pre) :global(*) {
+				color: inherit !important;
+				background: transparent !important;
+			}
+
+			.prose :global(table) {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.5em 0;
+				font-size: 0.95em;
+			}
+
+			.prose :global(th),
+			.prose :global(td) {
+				padding: 10px 14px;
+				border: 1px solid var(--border);
+				text-align: left;
+			}
+
+			.prose :global(th) {
+				background: rgba(var(--gray-light), 0.5);
+				font-weight: 700;
 			}
 
 			.prose :global(img) {
@@ -244,7 +274,7 @@ const {
 						series && (
 							<p class="series">
 								{series}
-								{seriesPart && ` · Part ${seriesPart}`}
+								{seriesPart && (seriesTotal ? ` · Part ${seriesPart} of ${seriesTotal}` : ` · Part ${seriesPart}`)}
 							</p>
 						)
 					}
