@@ -15,6 +15,8 @@ const {
 	updatedDate,
 	heroImage,
 	category,
+	series,
+	seriesPart,
 	readingTime,
 } = Astro.props;
 ---
@@ -42,6 +44,13 @@ const {
 				font-weight: 600;
 				letter-spacing: 0.05em;
 				text-transform: uppercase;
+				color: rgb(var(--gray));
+			}
+
+			.series {
+				margin: 0 0 10px;
+				font-size: 0.9rem;
+				font-weight: 600;
 				color: rgb(var(--gray));
 			}
 
@@ -230,6 +239,15 @@ const {
 					<a class="category" href={`/category/${category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
 						{category}
 					</a>
+
+					{
+						series && (
+							<p class="series">
+								{series}
+								{seriesPart && ` · Part ${seriesPart}`}
+							</p>
+						)
+					}
 
 					<h1 class="title">{title}</h1>
 
