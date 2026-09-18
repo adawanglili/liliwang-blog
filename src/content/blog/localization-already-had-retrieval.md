@@ -87,16 +87,20 @@ Phrase's documentation also makes an important qualification: adherence to indiv
 
 So there are really two different kinds of checks:
 
+**Explicit / deterministic requirement**
+
 ```text
-Explicit / deterministic requirement
         ↓
 Traditional QA / terminology checks
         ↓
 "Is the placeholder preserved?"
 "Is the approved term used?"
 "Is the date format correct?"
+```
 
-Contextual / interpretive requirement
+**Contextual / interpretive requirement**
+
+```text
         ↓
 AI-assisted evaluation
         ↓
