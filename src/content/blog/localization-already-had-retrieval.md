@@ -47,35 +47,33 @@ So the architecture is better described as:
 ```text
 retrieve
    ↓
-interpret context
+interpret
    ↓
-reuse / adapt / generate
-   ↓
-evaluate
+generate / adapt
 ```
 
 Retrieval is evidence. It is not automatically the answer.
 
 ## Not every localization problem needs AI
 
-The fact that AI can interpret context does not mean every localization decision needs an AI model.
+The fact that AI can interpret context does not mean every localization decision needs AI.
 
-Many localization requirements are explicit and deterministic. If the requirement is:
+Many localization requirements are explicit and deterministic. For example:
 
 - preserve this placeholder;
 - use the approved product name;
 - do not translate this brand term;
 - use the required date format;
 
-then there is little ambiguity to resolve. Traditional terminology management and automated QA already enforce or detect these requirements effectively.
+Traditional terminology management and automated QA already handle these effectively.
 
-The more interesting cases are where the requirement depends on **meaning, situation, or interpretation**.
+The more interesting cases are requirements that depend on **meaning, situation, or interpretation**.
 
 Consider a style requirement such as:
 
-> Use a reassuring tone when communicating a service disruption.
+> Warm and relaxed: We're natural. Less formal, more grounded in real, everyday conversations. Occasionally, we're fun.
 
-A traditional QA rule can check whether a required term appears, whether a placeholder was preserved, or whether a number is correct. But determining whether a translation actually sounds reassuring is a different kind of problem. It requires evaluating the language against the intended context and the rule.
+A traditional QA rule can check whether a required term appears, whether a placeholder was preserved, or whether a number is correct. But determining whether a translation actually sounds warm and relaxed is a different kind of problem. It requires evaluating the language against the intended context and the rule.
 
 TMS vendors are beginning to turn that human-readable guidance into machine-usable instructions.
 
@@ -102,42 +100,46 @@ Contextual / interpretive requirement
         ↓
 AI-assisted evaluation
         ↓
-"Does this sound appropriately reassuring?"
+"Does this sound warm and relaxed?"
 "Does this follow the intended tone?"
 "Does this translation fit the described context?"
 ```
 
-This distinction matters because it tells us where AI is actually adding something new. The opportunity is not to replace deterministic localization controls. It is to extend automated evaluation into areas that previously required a human to interpret the requirement and judge the result.
+This distinction matters because it tells us where AI is actually adding something new. The opportunity is not to replace deterministic localization controls, but to make more of the linguistic guidance around a translation available to machines in a form they can actually use.
 
 ## So where does RAG fit?
 
-Once we separate deterministic checks from contextual interpretation, the role of RAG becomes clearer.
+Once we separate retrieval from how retrieved knowledge is used, the role of RAG becomes clearer.
 
-A localization system can retrieve evidence from TM, TB, rules and metadata. AI can then use that evidence to interpret the current context, generate or adapt a translation, and evaluate whether the result follows the relevant requirements.
-
-A useful system would therefore route content according to the strength of the available evidence:
+A traditional TMS retrieves linguistic knowledge (TM matches, terminology, metadata, and other signals) and presents it within a structured translation workflow. A RAG-based system can use much of the same knowledge differently: instead of treating a retrieved translation as the answer, it provides that translation as evidence for a generative model.
 
 ```text
-SOURCE
+Traditional TM
+
+Source
   ↓
-TM / TB / RULES / METADATA
+Retrieve match
   ↓
-ASSESS CONTEXT
-  │
-  ├─ strong, appropriate match → reuse TM
-  │
-  ├─ strong but not exact → use TM as adaptation context
-  │
-  └─ weak / insufficient → MT or LLM generation
-                         ↓
-                     QA / evaluation
+Candidate translation
+```
+
+Versus:
+
+```text
+RAG-assisted generation
+
+Source
+  ↓
+Retrieve relevant TM / TB / rules
+  ↓
+Provide context to the model
+  ↓
+Generate / adapt translation
 ```
 
 Current products already show pieces of this model. Smartling's AI Adaptive Translation Memory uses an LLM to optimize fuzzy matches between 50% and 99.9%. Lokalise can retrieve TM or reviewed project translations as RAG context for AI translation. [Smartling AI Adaptive TM](https://help.smartling.com/hc/en-us/articles/25163532193307-AI-Adaptive-Translation-Memory) · [Lokalise AI Profiles](https://docs.lokalise.com/en/articles/11894216-ai-profiles)
 
-These examples point to an important distinction: RAG does not eliminate the value of TM. It can change how TM is used.
-
-Instead of treating a retrieved translation as simply *the answer*, the system can use it as evidence for generating or adapting a new translation.
+RAG does not eliminate the value of TM. It changes how TM is used: not as the final answer, but as evidence for generating or adapting a new translation.
 
 ## Context quality matters as much as retrieval quality
 
@@ -149,13 +151,9 @@ For example, Lokalise explicitly notes that mixed or inconsistent TM content can
 
 This brings us back to the *Apply* example.
 
-Suppose the TMS retrieves an excellent translation for **Apply**.
+Suppose the TMS retrieves an excellent translation for **Apply**. The question becomes whether the **reason it was good in the previous context also applies here**.
 
-The question isn't whether the translation is good.
-
-The question is whether the **reason it was good in the previous context also applies here**.
-
-That is the harder problem: not finding a translation, but understanding when the retrieved translation should influence the next decision. It changes what we should ask of a localization system: not whether a match is strong, but whether the retrieved context is actually relevant, and whether the system can use it appropriately.
+A strong retrieval result is therefore not necessarily the right one. Its usefulness depends on why it was retrieved, where it came from, and whether that origin still applies to the current content. The harder problem is not finding a translation. It is understanding whether the retrieved knowledge is relevant here, and how it should be used.
 
 ## The bigger question
 
@@ -169,9 +167,7 @@ The screenshot may be in the localization platform, the design spec in Figma, th
 
 The localization system may know that the string exists, while another system contains the information needed to understand what the string actually does.
 
-That leads to the next question:
-
-**What if the context needed to localize something does not live in the TMS at all?**
+That leads to the next question: **What if the context needed to localize something does not live in the TMS at all?**
 
 **Next in the series:** *The Context Localization Needs Doesn't Always Live in the TMS.*
 
