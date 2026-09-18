@@ -3,7 +3,7 @@ title: "Montagne d'Argent: I Didn't Expect Ropes on this Hike Near Montréal🥾
 description: "A summer hike at Montagne d'Argent, Québec, with rocky climbs, ropes, wild blueberries, mushrooms, and a little lake at the end."
 pubDate: "Aug 27 2026"
 category: "Travel & Outdoors"
-tags: ["Hiking", "Travel", "Québec", "Outdoors"]
+tags: ["Hiking", "Travel", "Quebec", "Outdoors"]
 ---
 
 [![Watch the hiking video on YouTube](../../assets/montagne-argent-video-thumb.jpg)](https://www.youtube.com/shorts/An9oJlOpFfs)
