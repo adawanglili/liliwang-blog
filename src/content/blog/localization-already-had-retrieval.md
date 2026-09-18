@@ -90,7 +90,6 @@ So there are really two different kinds of checks:
 **Explicit / deterministic requirement**
 
 ```text
-        ↓
 Traditional QA / terminology checks
         ↓
 "Is the placeholder preserved?"
@@ -101,7 +100,6 @@ Traditional QA / terminology checks
 **Contextual / interpretive requirement**
 
 ```text
-        ↓
 AI-assisted evaluation
         ↓
 "Does this sound approachable and human?"
