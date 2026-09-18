@@ -137,7 +137,7 @@ Provide context to the model
 Generate / adapt translation
 ```
 
-Current products already show pieces of this model. Smartling's AI Adaptive Translation Memory uses an LLM to optimize fuzzy matches between 50% and 99.9%. Lokalise can retrieve TM or reviewed project translations as RAG context for AI translation. [Smartling AI Adaptive TM](https://help.smartling.com/hc/en-us/articles/25163532193307-AI-Adaptive-Translation-Memory) · [Lokalise AI Profiles](https://docs.lokalise.com/en/articles/11894216-ai-profiles)
+Current products already show pieces of this model. Smartling's [AI Adaptive Translation Memory](https://help.smartling.com/hc/en-us/articles/25163532193307-AI-Adaptive-Translation-Memory) uses an LLM to optimize fuzzy matches between 50% and 99.9%. Lokalise's [AI Profiles](https://docs.lokalise.com/en/articles/11894216-ai-profiles) can retrieve TM or reviewed project translations as RAG context for AI translation.
 
 RAG does not eliminate the value of TM. It changes how TM is used: not as the final answer, but as evidence for generating or adapting a new translation.
 
@@ -147,7 +147,7 @@ Once retrieved information becomes input to a generative model, **its quality an
 
 A TM containing excellent translations for one type of content may not be equally useful for another.
 
-For example, Lokalise explicitly notes that mixed or inconsistent TM content can cause AI output to inherit the wrong tone or style. [Lokalise AI Profiles](https://docs.lokalise.com/en/articles/11894216-ai-profiles)
+For example, Lokalise's [AI Profiles](https://docs.lokalise.com/en/articles/11894216-ai-profiles) documentation notes that mixed or inconsistent TM content can cause AI output to inherit the wrong tone or style.
 
 This brings us back to the *Apply* example.
 
