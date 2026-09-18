@@ -77,7 +77,7 @@ A traditional QA rule can check whether a required term appears, whether a place
 
 TMS vendors are beginning to turn that human-readable guidance into machine-usable instructions.
 
-Phrase, for example, is moving style guidance into structured **Rules**, with eligible rules generating corresponding **AI Checks** for quality evaluation. Smartling similarly provides **Style Rules for AI** that can be used in translation and quality workflows. [Phrase Rules](https://support.phrase.com/hc/en-us/articles/28818120405788-Rules) · [Phrase AI Checks](https://support.phrase.com/hc/en-us/articles/28818120438300-AI-Checks) · [Smartling Style Rules for AI](https://help.smartling.com/hc/en-us/articles/41970369123227-Style-Rules-for-AI)
+Phrase, for example, is moving style guidance into structured [Rules](https://support.phrase.com/hc/en-us/articles/28818120405788-Rules), with eligible rules generating corresponding [AI Checks](https://support.phrase.com/hc/en-us/articles/28818120438300-AI-Checks) for quality evaluation. Smartling similarly provides [Style Rules for AI](https://help.smartling.com/hc/en-us/articles/41970369123227-Style-Rules-for-AI) that can be used in translation and quality workflows.
 
 The significance is not simply that an LLM is being added to QA.
 
