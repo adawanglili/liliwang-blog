@@ -71,9 +71,9 @@ The more interesting cases are requirements that depend on **meaning, situation,
 
 Consider a style requirement such as:
 
-> Warm and relaxed: We're natural. Less formal, more grounded in real, everyday conversations. Occasionally, we're fun.
+> Approachable and human: keep it conversational, avoid jargon, and let a little personality come through.
 
-A traditional QA rule can check whether a required term appears, whether a placeholder was preserved, or whether a number is correct. But determining whether a translation actually sounds warm and relaxed is a different kind of problem. It requires evaluating the language against the intended context and the rule.
+A traditional QA rule can check whether a required term appears, whether a placeholder was preserved, or whether a number is correct. But determining whether a translation actually sounds approachable and human is a different kind of problem. It requires evaluating the language against the intended context and the rule.
 
 TMS vendors are beginning to turn that human-readable guidance into machine-usable instructions.
 
@@ -100,7 +100,7 @@ Contextual / interpretive requirement
         ↓
 AI-assisted evaluation
         ↓
-"Does this sound warm and relaxed?"
+"Does this sound approachable and human?"
 "Does this follow the intended tone?"
 "Does this translation fit the described context?"
 ```
