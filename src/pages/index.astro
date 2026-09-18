@@ -45,6 +45,16 @@ const tagFontSize = (count: number) =>
 	maxCount === minCount
 		? (MIN_SIZE + MAX_SIZE) / 2
 		: MIN_SIZE + ((count - minCount) / (maxCount - minCount)) * (MAX_SIZE - MIN_SIZE);
+
+// Assigns each tag a stable color based on its own name (not its position in
+// the list), so a tag keeps the same color as other tags are added over time.
+const tagColorIndex = (tag: string) => {
+	let hash = 0;
+	for (let i = 0; i < tag.length; i++) {
+		hash = (hash * 31 + tag.charCodeAt(i)) % 8;
+	}
+	return hash + 1;
+};
 ---
 
 <!doctype html>
@@ -67,11 +77,11 @@ const tagFontSize = (count: number) =>
 				{
 					tagList.length > 0 && (
 						<div class="tag-cloud">
-							{tagList.map(({ tag, count }, i) => (
+							{tagList.map(({ tag, count }) => (
 								<a
 									href={`/tag/${tagSlug(tag)}/`}
 									class="tag-cloud-word"
-									style={`font-size: ${tagFontSize(count).toFixed(2)}rem; color: var(--tag-${(i % 8) + 1});`}
+									style={`font-size: ${tagFontSize(count).toFixed(2)}rem; color: var(--tag-${tagColorIndex(tag)});`}
 									title={`${count} ${count === 1 ? 'post' : 'posts'}`}
 								>
 									{tag}
