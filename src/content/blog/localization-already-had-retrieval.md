@@ -81,7 +81,7 @@ Phrase, for example, is moving style guidance into structured [Rules](https://su
 
 The significance is not simply that an LLM is being added to QA.
 
-It is that **some guidance that was previously written for humans can now be expressed as a machine-evaluable rule.**
+It is that **some guidance that was previously written for humans can now be expressed in a form a machine can evaluate.**
 
 Phrase's documentation also makes an important qualification: adherence to individual rules by its AI Translation Agent remains probabilistic. Turning a style guideline into an AI-evaluated rule does not make the requirement deterministic.
 
