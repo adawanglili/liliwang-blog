@@ -96,4 +96,13 @@ Localization may own linguistic assets. Product may own product behavior. Engine
 
 Maybe that is the next layer of localization: not just retrieving the right translation, but engineering the evidence we need to know what the translation should be.
 
-Sources: [Montreal Gazette](https://montrealgazette.com/news/quebecs-language-laws-face-a-new-reality-online-automatic-translation/), [SemEval-2025 Task 2: Entity-Aware Machine Translation](https://aclanthology.org/2025.semeval-1.326/), [Cultural and Knowledge Biases in LLMs through the Lens of Entity-Aware Machine Translation (LREC 2026)](https://aclanthology.org/2026.lrec-1.692/), [What's new in Xcode 26 (WWDC25)](https://developer.apple.com/videos/play/wwdc2025/247/), [Translate your app using agents in Xcode (WWDC26)](https://developer.apple.com/videos/play/wwdc2026/213/), [Localizing your app using agents](https://developer.apple.com/documentation/Xcode/localizing-your-app-using-agents), [Abstract Wikipedia](https://abstract.wikipedia.org/wiki/Abstract_Wikipedia:Main_page), [Sufficient Context: A New Lens on Retrieval Augmented Generation Systems (ICLR 2025)](https://arxiv.org/abs/2411.06037)
+### Sources
+
+- [Montreal Gazette](https://montrealgazette.com/news/quebecs-language-laws-face-a-new-reality-online-automatic-translation/)
+- [SemEval-2025 Task 2: Entity-Aware Machine Translation](https://aclanthology.org/2025.semeval-1.326/)
+- [Cultural and Knowledge Biases in LLMs through the Lens of Entity-Aware Machine Translation (LREC 2026)](https://aclanthology.org/2026.lrec-1.692/)
+- [What's new in Xcode 26 (WWDC25)](https://developer.apple.com/videos/play/wwdc2025/247/)
+- [Translate your app using agents in Xcode (WWDC26)](https://developer.apple.com/videos/play/wwdc2026/213/)
+- [Localizing your app using agents](https://developer.apple.com/documentation/Xcode/localizing-your-app-using-agents)
+- [Abstract Wikipedia](https://abstract.wikipedia.org/wiki/Abstract_Wikipedia:Main_page)
+- [Sufficient Context: A New Lens on Retrieval Augmented Generation Systems (ICLR 2025)](https://arxiv.org/abs/2411.06037)
