@@ -171,7 +171,7 @@ The localization system may know that the string exists, while another system co
 
 That leads to the next question: **What if the context needed to localize something does not live in the TMS at all?**
 
-**Next in the series:** *The Context Localization Needs Doesn't Always Live in the TMS.*
+**Next in the series:** [*Context Engineering for Localization*](/blog/context-engineering-for-localization/)
 
 ### Industry examples
 
