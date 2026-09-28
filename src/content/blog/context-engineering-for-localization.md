@@ -22,7 +22,7 @@ None of these are really grammar mistakes. They are failures to understand what 
 
 ## The context was already there
 
-A model can only reason with the context it is given, and here the context was everywhere. A knowledge graph such as Wikidata can identify *Tout le monde en parle* as a TV program and the Canadiens as a hockey team. It also knows what the Premier of Quebec is called in English. The author is a clue too. An account that belongs to Quebec's Premier tells you about the linguistic market, the political context and the likely local references.
+A model can only reason with the context it is given, and here the context was everywhere. A knowledge graph such as Wikidata can identify *Tout le monde en parle* as a TV program and the Canadiens as a hockey team. It also has an entry for the office of Premier of Quebec, with its name in both French and English. The author is a clue too. An account that belongs to Quebec's Premier tells you about the linguistic market, the political context and the likely local references.
 
 A French Canadian to Canadian English glossary could catch known traps such as *première ministre* and *dépanneur* (a Quebec word for a convenience store). X also has a "Rate this translation" button, so corrections from readers could become reusable linguistic knowledge.
 
