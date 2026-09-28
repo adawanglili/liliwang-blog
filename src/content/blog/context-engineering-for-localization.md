@@ -18,11 +18,11 @@ When I think about context in localization, the first example that comes to mind
 
 The English reads perfectly well. That is exactly the problem. Grok treated the name of a TV show as an ordinary phrase. It also picked the wrong office. In French, *première ministre* (literally "first minister") can mean a provincial premier or the federal prime minister. Canadian English uses a different word for each job. Grok lost the "first" meaning of *Premier* too, so the milestone of her first appearance disappeared. And it read the Canadiens as a nationality instead of a hockey team.
 
-None of these are really grammar mistakes. They are failures to understand what the words refer to. A human translator who knows Quebec would likely have avoided all of them, not because of better grammar but because they know the entities behind the words.
+None of these are really grammar mistakes. They are failures to understand what the words refer to. A translator with the right local context would likely have avoided all of them, not because of better grammar but because the entities behind the words were clear.
 
 ## The context was already there
 
-A model can only reason with the context it is given, and here the context was everywhere. A knowledge graph such as Wikidata can identify *Tout le monde en parle* as a TV program and the Canadiens as a hockey team. It also has an entry for the office of Premier of Quebec, with its name in both French and English. The author is a clue too. An account that belongs to Quebec's Premier tells you about the linguistic market, the political context and the likely local references.
+A model can only reason with the context it is given, and here the context was everywhere. A knowledge graph such as Wikidata can identify *Tout le monde en parle* as a TV program and the Canadiens as a hockey team. It also has an entry for the office of Premier of Quebec, with its name in both French and English. The author is a clue too: an account belonging to Quebec's Premier provides signals about the linguistic market, political context and likely local references.
 
 A French Canadian to Canadian English glossary could catch known traps such as *première ministre* and *dépanneur* (a Quebec word for a convenience store). X also has a "Rate this translation" button, so corrections from readers could become reusable linguistic knowledge.
 
@@ -30,11 +30,11 @@ So the problem was not a lack of information. It was a failure to select the inf
 
 ## The research points the same way
 
-Researchers have been measuring this exact problem. In 2025 the SemEval shared task on entity-aware machine translation compared 53 systems across 10 language pairs ([Conia et al., 2025](https://aclanthology.org/2025.semeval-1.326/)). Most of them were built on large language models. Systems that were given the correct entity up front reached 89.1 in entity accuracy, while the best system that had to find the entities on its own reached 77.1. Finding the right entity turned out to be a big part of the problem. The organizers also found that COMET is not a good measure of entity translation. This common quality metric responds more to fluency than to whether the entity is right.
+Researchers have been measuring this exact problem. In 2025 the SemEval shared task on entity-aware machine translation compared 53 systems across 10 language pairs ([Conia et al., 2025](https://aclanthology.org/2025.semeval-1.326/)). Most of them were built on large language models. Systems that were given the correct entity up front reached 89.1 in entity accuracy, while the best system that had to find the entities on its own reached 77.1. Entity accuracy here is measured with M-ETA (manual entity translation accuracy). Finding the right entity turned out to be a big part of the problem. The organizers also found that COMET is not a good measure of entity translation. This common quality metric responds more to fluency than to whether the entity is right.
 
-A 2026 study tested 11 language models in 10 languages ([Xu, Moroni and Navigli, LREC 2026](https://aclanthology.org/2026.lrec-1.692/)). External knowledge helped far more with culturally local entities than with global ones, with improvements in entity accuracy of up to 70%. A Quebec talk show and a Montreal hockey team are exactly that kind of local entity.
+A 2026 study tested 11 language models in 10 languages ([Xu, Moroni and Navigli, LREC 2026](https://aclanthology.org/2026.lrec-1.692/)). External knowledge helped far more with culturally local entities than with global ones, with improvements of up to 70% in entity accuracy (M-ETA). A Quebec talk show and a Montreal hockey team are exactly that kind of local entity.
 
-Fluency is not evidence that the model understood what the words refer to.
+Fluency is not evidence that the model understood what the words refer to. That distinction is at the heart of context engineering.
 
 ## What I mean by context engineering
 
