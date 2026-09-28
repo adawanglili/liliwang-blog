@@ -6,7 +6,6 @@ heroImage: '../../assets/localization-ai-pipeline-hero.png'
 category: 'AI & Technology'
 series: 'Rethinking Localization in the Age of AI'
 seriesPart: 1
-seriesTotal: 5
 tags: ['Localization', 'AI', 'TMS', 'RAG']
 ---
 

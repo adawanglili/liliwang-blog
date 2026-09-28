@@ -6,7 +6,6 @@ heroImage: '../../assets/context-engineering-hero.png'
 category: 'AI & Technology'
 series: 'Rethinking Localization in the Age of AI'
 seriesPart: 2
-seriesTotal: 5
 tags: ['Localization', 'AI', 'Context Engineering', 'Machine Translation', 'Knowledge Graph', 'Quebec']
 ---
 
