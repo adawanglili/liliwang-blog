@@ -1,6 +1,6 @@
 ---
 title: 'Context Engineering for Localization'
-description: 'A translation can be fluent and still be wrong. What a mistranslated post by the Premier of Quebec teaches us about giving AI the right context.'
+description: 'A translation can be fluent and still be wrong. How a mistranslated post got me thinking about context engineering for localization, and why having the information isn''t the same as using the right context.'
 pubDate: 'Sep 28 2026'
 heroImage: '../../assets/context-engineering-hero.png'
 category: 'AI & Technology'
