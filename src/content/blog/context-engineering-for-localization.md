@@ -2,15 +2,19 @@
 title: 'Context Engineering for Localization'
 description: 'A translation can be fluent and still be wrong. What a mistranslated post by the Premier of Quebec teaches us about giving AI the right context.'
 pubDate: 'Sep 28 2026'
+heroImage: '../../assets/context-engineering-hero.png'
 category: 'AI & Technology'
-tags: ['localization', 'AI', 'context engineering', 'machine translation', 'knowledge graph', 'Quebec']
+series: 'Rethinking Localization in the Age of AI'
+seriesPart: 2
+seriesTotal: 5
+tags: ['Localization', 'AI', 'Context Engineering', 'Machine Translation', 'Knowledge Graph', 'Quebec']
 ---
 
 ## Fluent, and still wrong
 
 When I think about context in localization, the first example that comes to mind is an X post from April. Quebec's new Premier Christine Fréchette wrote about a very Montreal kind of evening. She had just made her first appearance as Premier on Radio-Canada's flagship talk show *Tout le monde en parle* (literally "everyone is talking about it"). Our Canadiens also won 4-3 that night. X's automatic translation by Grok turned her post into "Everyone's talking about her as Prime Minister" and "Canadians who win 4-3" ([Montreal Gazette](https://montrealgazette.com/news/quebecs-language-laws-face-a-new-reality-online-automatic-translation/)).
 
-![The French original of the post next to the English translation by Grok](./grok-translation.png)
+![The French original of the post next to the English translation by Grok](../../assets/context-engineering-grok-translation.png)
 
 The English reads perfectly well. That is exactly the problem. Grok treated the name of a TV show as an ordinary phrase. It also picked the wrong office. In French, *première ministre* (literally "first minister") can mean a provincial premier or the federal prime minister. Canadian English uses a different word for each job. Grok lost the "first" meaning of *Premier* too, so the milestone of her first appearance disappeared. And it read the Canadiens as a nationality instead of a hockey team.
 
