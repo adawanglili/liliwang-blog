@@ -1,0 +1,178 @@
+---
+// Back-to-top button with a circular reading progress ring.
+// Colors come from the global theme tokens, so it follows light and dark mode.
+const RADIUS = 20;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+---
+
+<button class="scroll-progress" type="button" aria-label="Back to top" data-scroll-progress>
+	<svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+		<circle class="track" cx="24" cy="24" r={RADIUS} />
+		<circle
+			class="bar"
+			cx="24"
+			cy="24"
+			r={RADIUS}
+			stroke-dasharray={CIRCUMFERENCE}
+			stroke-dashoffset={CIRCUMFERENCE}
+		/>
+	</svg>
+	<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+		<path d="M6 14l6-6 6 6" />
+	</svg>
+</button>
+
+<style>
+	.scroll-progress {
+		position: fixed;
+		right: max(20px, env(safe-area-inset-right));
+		bottom: max(20px, env(safe-area-inset-bottom));
+		z-index: 50;
+		display: grid;
+		place-items: center;
+		width: 48px;
+		height: 48px;
+		padding: 0;
+		border: 1px solid var(--border);
+		border-radius: 50%;
+		background: var(--surface);
+		box-shadow: 0 2px 10px rgba(var(--gray), 0.25);
+		color: var(--accent);
+		cursor: pointer;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(8px);
+		transition:
+			opacity 0.25s ease,
+			transform 0.25s ease,
+			visibility 0s linear 0.25s;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.scroll-progress {
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.scroll-progress.is-visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+		transition:
+			opacity 0.25s ease,
+			transform 0.25s ease;
+	}
+
+	.scroll-progress:hover {
+		transform: translateY(-2px);
+	}
+
+	.scroll-progress:focus-visible {
+		outline: 2px solid var(--accent);
+		outline-offset: 3px;
+	}
+
+	.ring,
+	.arrow {
+		grid-area: 1 / 1;
+	}
+
+	.ring {
+		width: 48px;
+		height: 48px;
+		transform: rotate(-90deg);
+	}
+
+	.track,
+	.bar {
+		fill: none;
+		stroke-width: 3;
+	}
+
+	.track {
+		stroke: rgba(var(--gray), 0.2);
+	}
+
+	.bar {
+		stroke: var(--accent);
+		stroke-linecap: round;
+	}
+
+	.arrow {
+		width: 20px;
+		height: 20px;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 2.2;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+	@media (max-width: 720px) {
+		.scroll-progress {
+			right: max(16px, env(safe-area-inset-right));
+			bottom: max(16px, env(safe-area-inset-bottom));
+			width: 44px;
+			height: 44px;
+		}
+
+		.ring {
+			width: 44px;
+			height: 44px;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.scroll-progress,
+		.scroll-progress.is-visible {
+			transition: none;
+			transform: none;
+		}
+	}
+
+	@media print {
+		.scroll-progress {
+			display: none;
+		}
+	}
+</style>
+
+<script>
+	const button = document.querySelector<HTMLButtonElement>('[data-scroll-progress]');
+	const bar = button?.querySelector<SVGCircleElement>('.bar');
+
+	if (button && bar) {
+		const circumference = Number(bar.getAttribute('stroke-dasharray'));
+		const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+		let ticking = false;
+
+		const update = () => {
+			ticking = false;
+			const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+			// Skip short pages where there is little to scroll.
+			const longEnough = scrollable > window.innerHeight * 0.75;
+			const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+
+			bar.style.strokeDashoffset = String(circumference * (1 - progress));
+			button.classList.toggle('is-visible', longEnough && window.scrollY > 400);
+		};
+
+		const requestUpdate = () => {
+			if (!ticking) {
+				ticking = true;
+				requestAnimationFrame(update);
+			}
+		};
+
+		window.addEventListener('scroll', requestUpdate, { passive: true });
+		window.addEventListener('resize', requestUpdate);
+		// Images and comments load later and change the page height.
+		new ResizeObserver(requestUpdate).observe(document.body);
+
+		button.addEventListener('click', () => {
+			window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+		});
+
+		update();
+	}
+</script>
