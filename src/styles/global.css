@@ -27,33 +27,33 @@
 	--tag-8: #de2a29;
 	color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-	:root {
-		--accent: #7c8cff;
-		--accent-dark: #aab3ff;
-		--black: 237, 240, 246;
-		--gray: 158, 170, 196;
-		--gray-light: 42, 47, 58;
-		--gray-dark: 214, 219, 230;
-		--gray-gradient: rgba(var(--gray-light), 50%), #0d0f14;
-		--surface: #14161c;
-		--border: #262a34;
-		--box-shadow:
-			0 2px 6px rgba(0, 0, 0, 45%), 0 8px 24px rgba(0, 0, 0, 55%),
-			0 16px 32px rgba(0, 0, 0, 55%);
-		--tag-1: #3987e5;
-		--tag-2: #d95926;
-		--tag-3: #199e70;
-		--tag-4: #c98500;
-		--tag-5: #d55181;
-		--tag-6: #009700;
-		--tag-7: #9085e9;
-		--tag-8: #e66767;
-		color-scheme: dark;
-	}
-	body {
-		background-color: #0d0f14;
-	}
+/* Dark theme. The inline script in BaseHead sets data-theme from the reader's
+   saved choice, or from their device setting when they have not chosen. */
+:root[data-theme='dark'] {
+	--accent: #7c8cff;
+	--accent-dark: #aab3ff;
+	--black: 237, 240, 246;
+	--gray: 158, 170, 196;
+	--gray-light: 42, 47, 58;
+	--gray-dark: 214, 219, 230;
+	--gray-gradient: rgba(var(--gray-light), 50%), #0d0f14;
+	--surface: #14161c;
+	--border: #262a34;
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 45%), 0 8px 24px rgba(0, 0, 0, 55%),
+		0 16px 32px rgba(0, 0, 0, 55%);
+	--tag-1: #3987e5;
+	--tag-2: #d95926;
+	--tag-3: #199e70;
+	--tag-4: #c98500;
+	--tag-5: #d55181;
+	--tag-6: #009700;
+	--tag-7: #9085e9;
+	--tag-8: #e66767;
+	color-scheme: dark;
+}
+:root[data-theme='dark'] body {
+	background-color: #0d0f14;
 }
 body {
 	font-family: var(--font-atkinson);

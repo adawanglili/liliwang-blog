@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import avatar from '../assets/Screenshot_20260909-230126.png';
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
 ---
 
 <header>
@@ -19,6 +20,7 @@ import HeaderLink from './HeaderLink.astro';
 			<HeaderLink href="/category/ai-technology/">AI & Tech</HeaderLink>
 			<HeaderLink href="/category/travel-outdoors/">Travel</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+			<ThemeToggle />
 		</div>
 	</nav>
 </header>

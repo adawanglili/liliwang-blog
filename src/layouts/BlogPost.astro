@@ -322,22 +322,40 @@ const {
 				</div>
 
 				<section class="comments">
-					<script
-						src="https://giscus.app/client.js"
-						data-repo="adawanglili/liliwang-blog"
-						data-repo-id="R_kgDOULP6VA"
-						data-category="General"
-						data-category-id="DIC_kwDOULP6VM4DFL_R"
-						data-mapping="pathname"
-						data-strict="0"
-						data-reactions-enabled="1"
-						data-emit-metadata="0"
-						data-input-position="bottom"
-						data-theme="preferred_color_scheme"
-						data-lang="en"
-						crossorigin="anonymous"
-						async
-					></script>
+					<script is:inline>
+						(() => {
+							// giscus comments, loaded in the reader's current theme.
+							const giscusTheme = () =>
+								document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+							const attrs = {
+								src: 'https://giscus.app/client.js',
+								'data-repo': 'adawanglili/liliwang-blog',
+								'data-repo-id': 'R_kgDOULP6VA',
+								'data-category': 'General',
+								'data-category-id': 'DIC_kwDOULP6VM4DFL_R',
+								'data-mapping': 'pathname',
+								'data-strict': '0',
+								'data-reactions-enabled': '1',
+								'data-emit-metadata': '0',
+								'data-input-position': 'bottom',
+								'data-theme': giscusTheme(),
+								'data-lang': 'en',
+								crossorigin: 'anonymous',
+							};
+							const script = document.createElement('script');
+							for (const [name, value] of Object.entries(attrs)) script.setAttribute(name, value);
+							script.async = true;
+							document.currentScript.after(script);
+
+							// Switch the comments when the reader changes theme.
+							document.addEventListener('themechange', () => {
+								document.querySelector('iframe.giscus-frame')?.contentWindow?.postMessage(
+									{ giscus: { setConfig: { theme: giscusTheme() } } },
+									'https://giscus.app',
+								);
+							});
+						})();
+					</script>
 				</section>
 
 				<footer class="article-footer">

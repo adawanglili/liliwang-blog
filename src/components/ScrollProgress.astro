@@ -48,10 +48,8 @@ const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 			visibility 0s linear 0.25s;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		.scroll-progress {
-			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-		}
+	:global([data-theme='dark']) .scroll-progress {
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 	}
 
 	.scroll-progress.is-visible {

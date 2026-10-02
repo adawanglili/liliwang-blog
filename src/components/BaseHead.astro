@@ -32,8 +32,41 @@ const { title, description, image = FallbackImage } = Astro.props;
 />
 <meta name="generator" content={Astro.generator} />
 <meta name="author" content="Ada Wang Lili" />
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#ffffff" />
+
+<!-- Set the theme before the page draws, so readers never see a flash of the wrong one. -->
+<script is:inline>
+	(() => {
+		const root = document.documentElement;
+		const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+		const read = () => {
+			try {
+				return localStorage.getItem('theme');
+			} catch {
+				return null;
+			}
+		};
+		const apply = (theme) => {
+			root.dataset.theme = theme;
+			document
+				.querySelector('meta[name="theme-color"]')
+				?.setAttribute('content', theme === 'dark' ? '#14161c' : '#ffffff');
+			document.dispatchEvent(new CustomEvent('themechange', { detail: theme }));
+		};
+		window.setTheme = (theme) => {
+			try {
+				localStorage.setItem('theme', theme);
+			} catch {}
+			apply(theme);
+		};
+		apply(read() || (darkQuery.matches ? 'dark' : 'light'));
+		document.addEventListener('DOMContentLoaded', () => apply(root.dataset.theme));
+		// Follow the device setting until the reader picks a theme.
+		darkQuery.addEventListener('change', (event) => {
+			if (!read()) apply(event.matches ? 'dark' : 'light');
+		});
+	})();
+</script>
 
 <Font cssVariable="--font-atkinson" preload />
 
