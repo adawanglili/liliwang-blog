@@ -1,5 +1,5 @@
 ---
-title: "A Mushroom-Filled Hike: Big Crow & Nun-da-ga-o Ridge Loop 🍄"
+title: "Big Crow & Nun-da-ga-o Ridge Loop 🍄"
 description: "The Big Crow & Nun-da-ga-o Ridge Loop was unexpectedly full of mushrooms, so I filmed a short video of them along the trail."
 pubDate: "Oct 05 2026"
 category: "Travel & Outdoors"
