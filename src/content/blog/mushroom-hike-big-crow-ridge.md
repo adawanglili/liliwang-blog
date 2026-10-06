@@ -8,7 +8,7 @@ tags: ["Hiking", "Travel", "Outdoors", "Mushrooms", "YouTube"]
 
 Unexpectedly, the trail was full of mushrooms...big ones, tiny ones, colorful ones, and some wonderfully strange ones!
 
-I’d never seen so many honey mushrooms in one place. According to some mushroom-savvy friends, they’re also quite tasty, although I’ve seen some little worm friends happily hanging out there too. 😄
+I’d never seen so many honey mushrooms in one place. According to some mushroom-savvy friends, they’re quite tasty, although I’ve seen some little worm friends happily hanging out there too. 😄
 
 I ended up filming quite a few along the way, so I put together a short video.
 
