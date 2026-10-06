@@ -12,10 +12,8 @@ I’d never seen so many honey mushrooms in one place. According to some mushroo
 
 I ended up filming quite a few along the way, so I put together a short video.
 
-🎥 Watch the mushroom video:
-[YouTube Short — Mushrooms on the Trail](https://www.youtube.com/shorts/R1HQxHQZJ5Y)
+You can [watch the mushroom video on YouTube](https://www.youtube.com/shorts/R1HQxHQZJ5Y).
 
-🥾 Trail details:
-[Big Crow & Nun-da-ga-o Ridge Loop on AllTrails](https://www.alltrails.com/en-gb/trail/us/new-york/big-crow-and-nun-da-ga-o-ridge-loop-trail)
+If you want to try this hike yourself, here are the [trail details on AllTrails](https://www.alltrails.com/en-gb/trail/us/new-york/big-crow-and-nun-da-ga-o-ridge-loop-trail).
 
 I also love the name Nun-da-ga-o. It’s often said to mean “hill of the wind spirits”, such a beautiful name for a ridge where you can really feel the wind. 🌬️🍂
