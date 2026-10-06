@@ -1,6 +1,6 @@
 ---
 title: "Big Crow & Nun-da-ga-o Ridge Loop @ NY 🍄"
-description: "The trail was unexpectedly full of mushrooms, so I filmed a short video of them along the trail."
+description: "What started as a hike turned into an unexpected mushroom-spotting adventure, and I captured some of those cute little ones along the way."
 pubDate: "Oct 05 2026"
 category: "Travel & Outdoors"
 tags: ["Hiking", "Travel", "Outdoors", "Mushrooms", "YouTube"]
