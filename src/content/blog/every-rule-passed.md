@@ -32,7 +32,7 @@ My checks confirmed that what was present was correct. Not one of them asked whe
 > **Validation is not correctness.**
 > A system can satisfy every rule you wrote and still produce the wrong thing.
 
-The most important requirement was "translate this, and only this". I had never written it down as something a machine could check.
+The most important requirement was "translate this, and only this". I had told the model. I had never turned it into a check.
 
 ## A louder prompt was not the fix
 
