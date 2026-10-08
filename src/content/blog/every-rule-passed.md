@@ -2,6 +2,7 @@
 title: 'Every Rule Passed. The Translation Was a Page That Should Not Exist.'
 description: 'A short hotel title went into my AI translation pipeline and came out as an invented guest information page. Every check I had built said it was fine.'
 pubDate: 'Oct 8 2026'
+heroImage: '../../assets/every-rule-passed-hero.png'
 category: 'AI & Technology'
 series: 'Building Reliable AI Workflows: Lessons from a Localization Lab'
 seriesPart: 1
