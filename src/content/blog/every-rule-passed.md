@@ -34,11 +34,11 @@ My checks confirmed that what was present was correct. Not one of them asked whe
 
 The most important requirement was "translate this, and only this". I had never written it down as something a machine could check.
 
-## My first fix was wrong
+## A louder prompt was not the fix
 
-My first reaction was to tell the model not to do it. Add "do not invent content" to the prompt and move on.
+My prompt already said: "Reply with the translation only. Never add, remove or explain anything." The model had that instruction and wrote a page anyway.
 
-Then I looked at the prompt. The instruction was already there: "Reply with the translation only. Never add, remove or explain anything." The model had read it and written a page anyway.
+My first instinct was to say it louder. Add another rule. Add capital letters. Write "do NOT invent content". But a stronger instruction is still only a request. If the model ignored it once, it could ignore it again.
 
 So the prompt could not be the whole fix. I needed to understand why a title, of all things, turned into a page.
 
