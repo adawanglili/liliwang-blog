@@ -21,7 +21,7 @@ The output was a full guest information section in French. It had check out time
 
 ## Why my checks said yes
 
-The obvious story is that the AI made something up. That happens. The story I care about is what happened next. I ran the output through my rule checks, and **every rule passed**.
+The AI made something up. Fine. What caught my attention was what happened when I ran it through the checks: **every rule passed**.
 
 The checks were not lazy. The brand name stayed in English, as the glossary requires. The reader was addressed as "vous", times were in Quebec format, and Quebec terms were used where France French terms would be wrong.
 
