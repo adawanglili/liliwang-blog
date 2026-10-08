@@ -36,15 +36,19 @@ The most important requirement was "translate this, and only this". I had told t
 
 ## A louder prompt was not the fix
 
-My prompt already said: "Reply with the translation only. Never add, remove or explain anything." The model had that instruction and wrote a page anyway.
+My prompt already said: "Reply with the translation only. No notes or explanations." The model had that instruction and wrote a page anyway.
 
 My first instinct was to say it louder. Add another rule. Add capital letters. Write "do NOT invent content". But a stronger instruction is still only a request. If the model ignored it once, it could ignore it again.
 
 So the prompt could not be the whole fix. I needed to understand why a title, of all things, turned into a page.
 
-One important part of the answer was how I passed context. I was sending the glossary and a few reference translations in the same message as the text to translate. For a long paragraph, that worked. For a six word title, the context was far longer than the source. The request looked less like "translate this label" and more like "here is a hotel, write about it".
+I went back through the earlier runs. They had a different problem. The glossary and reference translations sat in the same message as the title, and the model echoed them back into its output. Moving them to the system prompt fixed that. The invented page appeared right after that change. One fix had exposed another failure.
 
-I don't think context placement was the only cause. A short source, a large prompt and a generative model with no output limit all played a part. But it taught me something useful. Short strings look like prompts.
+Looking at that run, the prompt was working against itself. It told the model it was a translator "for a hotel website". It gave a reference translation describing the hotel. Then it sent six words that read like the heading of a guest page. One rule even said to translate the text inside `<source>` tags, but the message had no source tags. An instruction is not a boundary if nothing enforces it. Nothing limited the length of the answer either. For a long paragraph, none of this mattered. For a short title, the context was much bigger than the text. The request looked less like "translate this label" and more like "here is a hotel, write its guest page".
+
+The model didn't simply ignore an instruction. It understood the domain and lost the boundary of the task. Short strings look like prompts.
+
+I rewrote the prompt. It now describes a translation engine that never writes new content. It says a title must stay a title. Short strings get no reference translations. The next run returned a title: "Harbour View Hotel Montreal – Renseignements pour les clients". I made those changes together, so I can't say which one was decisive. And a prompt is still only a request. I needed more than that.
 
 ## The fix was layers, not a better prompt
 
@@ -62,7 +66,7 @@ ESCALATE   send anything suspicious to a person
 LEARN      feed approved human edits back into the system
 ```
 
-**Prevent.** Context moved to the system prompt, separating the reference material from the text to translate. The user message now holds only the text to translate. Short strings (under 8 words) get no reference translations, because examples of full sentences invite full sentences.
+**Prevent.** The prompt describes a translation engine and says a title must stay a title. Reference material sits in the system prompt, apart from the text to translate. Short strings (under 8 words) get no reference translations, because examples of full sentences invite full sentences.
 
 **Constrain.** Output length is capped relative to the source. This doesn't guarantee a correct answer. It makes a large expansion much harder, and it gives the pipeline one more rule that does not depend on a model.
 
@@ -71,8 +75,6 @@ LEARN      feed approved human edits back into the system
 **Escalate.** A failed check always beats a good score. If any check fires, the translation goes to a review sheet and a reviewer gets a Slack notice. It does not go to the translation memory or the CMS until a person approves it. Only output that passes every check and scores 0.85 or higher skips review.
 
 **Learn.** Reviewer edits are checked again, then saved as approved translations. When the same text comes back, the pipeline reuses the approved version instead of translating it again. Similar text can use approved translations as examples, but never unreviewed machine output.
-
-After these changes, the same title came back as a title: "Harbour View Hotel Montreal – Renseignements pour les clients".
 
 ## What each layer can catch
 
