@@ -23,7 +23,7 @@ The output was a full guest information section in French. It had check out time
 
 The AI made something up. Fine. What caught my attention was what happened when I ran it through the checks: **every rule passed**.
 
-The checks were not lazy. The brand name stayed in English, as the glossary requires. The reader was addressed as "vous", times were in Quebec format, and Quebec terms were used where France French terms would be wrong.
+The checks were not lazy. The brand name stayed in English, as the glossary requires. The reader was addressed as "vous". Times followed Canadian French conventions. Canadian French terms were used where France French terms would be wrong.
 
 All of that was true. The invented page was very well formatted French.
 
